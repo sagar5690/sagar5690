@@ -55,3 +55,8 @@ This script creates:
 ## App Store / distribution notes
 
 If you plan App Store distribution, review Apple’s App Review and privacy requirements and provide clear user consent prompts for microphone and input monitoring/accessibility related behavior.
+
+## Troubleshooting
+
+If you see `'main' attribute cannot be used in a module that contains top-level code`, make sure your SwiftUI `@main` app file is **not** named `main.swift` in a Swift Package executable target. In this repo it is `Sources/KnockDesk/KnockDeskApp.swift`.
+
